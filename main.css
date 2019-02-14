@@ -1,0 +1,73 @@
+/* css for survey form.html */
+
+body{
+    background-color: #aaddff ;
+    text-align: center;
+}
+#form-outer{
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    width: 70%;
+    max-width: 80%;;
+}
+
+.labels{
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.rightTab{
+    display: inline-block;
+    text-align: left;
+    width: 48%;
+    vertical-align: middle;
+}
+.input-field, #comments{
+    height: 20px;
+    width: 280px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 5px; 
+}
+.dropDown{
+    height: 35px;
+    width: 290px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #000;
+    border-radius: 5px; 
+}
+.userRatings, input[type="checkbox"]{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    height:15px;
+    width: 15px;
+}
+.radio, .checkbox{
+    position: relative;
+    
+    left: -45px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px; 
+}
+.selection{
+    margin-top: 15px;
+}
+#submit{
+    height: 30px;
+    width: 100px;
+    font-size: 80%;
+    border: 0px solid;
+    border-radius: 2px;
+    background-color: #aae;
+    margin: 10px;
+}

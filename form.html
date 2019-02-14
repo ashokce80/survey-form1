@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div >
+        <h1 id="title" >Survey Form</h1>
+    </div>
+    <div id="form-outer">
+        <p id="description">Please let us know how can we improve FCC experiece.</p>
+        <form id="survey-form" action="submit" method="GET">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">Name*</label>
+                </div>
+                <div class="rightTab">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="enter your name" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">Your email</label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="enter your email id" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="">Age</label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" name="number" id="number" class="input-field" min="1" max="50" placeholder="enter your age">
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="">What is your current role?</label>
+                </div>
+                <div class="rightTab">
+                    <select name="dropdown" id="dropdown" class="dropDown">
+                        <option disabled value>Select option</option>
+                        <option value="Student">Student</option>
+                        <option value="lerner">Full time lerner</option>
+                        <option value="Professional">Professional</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                        <label for="userrating">How likely would you recommend freeCodeCamp to friend?</label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;" class="selection" >
+                        <li class="radio"><label> Definately<input type="radio" name="radio-buttons" class="userRatings" value="1"></label></li>
+                        <li class="radio"> <label>May be <input type="radio" name="radio-buttons" class="userRatings" value="2"></label></li>
+                        <li class="radio"><label>Not Decided <input type="radio" name="radio-buttons" class="userRatings" value="3"> </label> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rowTab">
+                    <div class="labels">
+                        <label id="labChks" for="preference">Things shold be improved in future.</label>
+                    </div>
+                    <div class="rightTab">
+                        <ul id="preference" style="list-style:  none;" class="selection">
+                            <li class="checkbox"><label ><input type="checkbox" class="userRatings" name="checkboxs" value="1">Front End Development</label></li>
+
+                            <li class="checkbox"> <label> <input type="checkbox" class="userRatings" name="checkboxs" value="2">Back End Development</label></li>
+                            
+                            <li class="checkbox"><label> <input type="checkbox" class="userRatings" name="checkboxs" value="3">Data visualization</label> </li>
+
+                            <li class="checkbox"><label> <input type="checkbox" class="userRatings" name="checkboxs" value="4">JavaScript</label> </li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for="textArea">Please add any relevant comment...</label>
+                </div>
+                <div class="rightTab">
+                    <textarea name="comment" class="input-field" id="comments" style="height: 100px; width: 300px;" placeholder="Please enter your comments..."></textarea>
+                </div>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
